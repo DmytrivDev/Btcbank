@@ -1,10 +1,13 @@
 html,
 body {
-  font-family: var(--ff);
-  color: var(--cm);
+  font-family: var(--ff1);
+  color: var(--cw);
   font-size: 1rem;
   line-height: 1.5;
   font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--cb);
 }
 
 .overhide {
@@ -20,11 +23,9 @@ body {
 
 .main {
   flex: 1 1 auto;
-  padding-bottom: 4rem;
 }
 
-[class*="__container"] {
-  max-width: 90em;
+[class*="__container"], .container {
   padding: 0 2.5em;
   margin: 0 auto;
 }
@@ -46,12 +47,8 @@ body {
     font-size: 16px;
   }
 
-  [class*="__container"] {
+  [class*="__container"], .container {
     padding: 0 1.25em;
-  }
-
-  .main {
-    padding-bottom: 3.5rem;
   }
 }
 
@@ -70,10 +67,6 @@ body {
   html,
   body {
     font-size: 16px;
-  }
-
-  .main {
-    padding-bottom: 3rem;
   }
 }
 
